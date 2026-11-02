@@ -12,4 +12,4 @@
 UUID=7771d945-9164-4590-907d-66c7c528ccb7 /                       ext4    defaults        1 1
 UUID=97909a91-efb7-45df-bc34-509277899aac /boot                   ext4    defaults        1 2
 UUID=9b4bfdff-742f-43be-999f-ea7d53428a0e none                    swap    defaults        0 0
-LABEL=mephi_web /mephi-web ext4 defaults 0 2
+LABEL=MEPHI_WEB /mephi-web ext4 defaults 0 2

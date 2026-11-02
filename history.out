@@ -209,3 +209,147 @@
   209  getfacl /data/mephi-2026 > ~/getfacl.out
   210* 
   211  history > ~/history.out
+    1  systemctl get-defoult
+    2  systemctl get-default
+    3  id
+    4  ip link
+    5  ping 8.8.8.8
+    6  ip all
+    7  ip -all
+    8  ip address
+    9  nmcli connection show --active
+   10  ipconfig
+   11  ifconfig
+   12  nmcli connection show enp0s3
+   13  sudo nmcli connection modifly enp0s3 ipv4.method auto
+   14  sudo nmcli connection modify enp0s3 ipv4.method auto
+   15  sudo nmcli connection modifly enp0s3 ipv4.addresses ""
+   16  sudo nmcli connection modify enp0s3 ipv4.addresses ""
+   17  ip[ -a
+   18  ip -a
+   19  ip -address
+   20  ip address
+   21  nmcli -g connection.autoconnect connection show enp0s3
+   22  sudo hostnamectl set-hostname mephi-2026.domain.local
+   23  hostname
+   24  hostnamectl
+   25  ping 8.8.8.8
+   26  sudo dnf repolist
+   27  sudo dnf check-update
+   28  ssudo dnf upgrade
+   29  sudo dnf upgrade
+   30  ping -c 4 8.8.8.8 > ping.out
+   31  cat ping.out
+   32  sudo dnf install ngnix
+   33  sudo dnf install nginx
+   34  command -v nginx
+   35  sudo dnf install libcap-ng-utils
+   36  command -v getcap
+   37  command -v setcap
+   38  sudo dnf install dnf-plugins-core
+   39  dnf download --destdir /tmp tcpdump
+   40  sudo rpm -ivh /tmp/tcpdump-*.rpm
+   41  rm /tmp/tcpdump-4.99.5.red80.i686.rpm
+   42  rm /tmp/tcpdump-4.99.5-1.red80.i686.rpm
+   43  sudo rpm -ivh /tmp/tcpdump-*.rpm
+   44  command -v tcpdump
+   45  dnf history .~/dns.out
+   46  dnf history ~/dns.out
+   47  dnf history > ~/dns.out
+   48  cat ~/dnf.out
+   49  cat ~/vadim/dnf.out
+   50  dnf history > ~/dns.out
+   51  cat ~/dns.out
+   52  sudo systemctl poweroff
+   53  lsblk -no NAME,PATH,SIZE,TYPE,FSTYPE,LABEL,MOUNTPOINTS
+   54  sudo systemctl poweroff
+   55  su - user1
+   56  sudo -s
+   57  ls
+   58  history -a
+   59  ls
+   60  ls -la /media/sf_shared
+   61  findmnt -t vboxssf
+   62  шз фввкуыы
+   63  ip address
+   64  ls
+   65  cp curl.out mephi-session-project-2026
+   66  cp dns.out mephi-session-project-2026
+   67  cp getcap.out mephi-session-project-2026
+   68  cp history.out mephi-session-project-2026
+   69  cp journalctl.out mephi-session-project-2026
+   70  cp passwd mephi-session-project-2026
+   71  cp pwqualiity mephi-session-project-2026
+   72  cp stat.out mephi-session-project-2026
+   73  cp dnf.out mephi-session-project-2026
+   74  cp fstab mephi-session-project-2026
+   75  cp getenforce mephi-session-project-2026
+   76  cp getenforce.out mephi-session-project-2026
+   77  cp group mephi-session-project-2026
+   78  cp history.out mephi-session-project-2026
+   79  cp ping.out mephi-session-project-2026
+   80  cp shadow mephi-session-project-2026
+   81  cp tcpdump-user1.out mephi-session-project-2026
+   82  nano
+   83  ls
+   84  nano README.md
+   85  ды
+   86  ls
+   87  cd mephi-session-project-2026
+   88  git status
+   89  git add
+   90  ls
+   91  git add .
+   92  git status
+   93  git commit -m "Add MEPHI session project 2026 files"
+   94  git push -u origin main
+   95  ghp_4THnFsBQHPPBhacommand -v gh
+   96  command -v gh
+   97  sudo dnf install gh
+   98  gh
+   99  sudo dnf install gh
+  100  git push -u origin main
+  101  sudo chage -M 90 user1
+  102  sudo chage -M 90 user2
+  103  sudo chage -M 90 user3
+  104  sudo chage -M 90 curator1
+  105  sudo chage -M 90 curator2
+  106  sudo sed-i 's/^PASS_MAX_DAYS.*/PASS_MAX_DAYS 90/' /etc/login.defs'
+  107  sudo sed-i 's/^PASS_MAX_DAYS.*/PASS_MAX_DAYS 90/' /etc/login.defs
+  108  sudo sed -i 's/^PASS_MAX_DAYS.*/PASS_MAX_DAYS 90/' /etc/login.defs
+  109  sudo sed -i '/^[[:blank:]]'*minlen[[:blank:]]*=/d' /etc/security/pwquality.conf
+  110  sudo sed -i '/^[[:blank:]]*minlen[[:blank:]]*=/d' /etc/security/pwquality.conf
+  111  grep -q '^enforce_for_root' /etc/security/pwquality.conf ||  echo 'enforce_for_root' | sudo tee -a /etc/security/pwquality.conf 
+  112  sudo passwd user1
+  113  sudo passwd user2
+  114  sudo passwd user3
+  115  sudo passwd curator1
+  116  sudo passwd curator2
+  117  grep -q 'pam_access.so' /etc/pam.d/login || sudo sed -i 'li account required pam_access.so' /etc/pam.d/login
+  118  grep -q 'pam_access.so' /etc/pam.d/login || sudo sed -i 'li\account required pam_access.so' /etc/pam.d/login
+  119  grep 'pam_access.so' /etc/pam.d/login
+  120  sudo sed -i 'li\account required pam_access.so' /etc/pam.d/login
+  121  grep 'pam_access.so' /etc/pam.d/login
+  122  echo 'account required pam_access.so'
+  123  sudo tee -a /etc/pam.d/login
+  124  grep 'pam_access.so' /etc/pam.d/login | sudo tee -a /etc/pam.d/login
+  125  echo 'account required pam_access.so' | sudo tee -a /etc/pam.d/login
+  126  grep 'pam_access.so' /etc/pam.d/login
+  127  grep '^-:(curators):LOCAL' | sudo tee -a /etc/security/access.conf
+  128  grep '^-:(curators):LOCAL' /etc/security/access.conf
+  129  echo '-:(curators):LOCAL' | sudo tee -a /etc/security/access.conf
+  130  grep '^-:(curators):LOCAL' /etc/security/access.conf
+  131  cp /etc/pam.d/login ~/pam-login
+  132  cp /etc/security/access.conf ~/access.conf
+  133  sudo e2label /dev/sdb1 MEPHI_WEB
+  134  sudo sed -i 's/LABEL=mephi_web/LABEL=MEPHI_WEB/' /etc/fstab
+  135  sudo systemctl daemon-reload
+  136  sudo  findmnt --verify
+  137  sudo -u user1 /usr/sbin/tcpdump -D > ~/tcpdump-user1.out 2>&1
+  138  cp /etc/fstab ~/fstab
+  139  cp /etc/security/pwquality.conf ~/pwuality.conf
+  140  sudo cp /etc/shadow ~/shadow
+  141  sudo chown vadim:vadim ~/shadow
+  142  cp /etc/security/access.conf ~/access.conf
+  143  cp /etc/pam.d/login ~/pam-login
+  144  history >> ~/history.out

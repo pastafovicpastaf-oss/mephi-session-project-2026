@@ -1,11 +1,9 @@
-sudo: ключ должен использоваться с аргументом — «D»
-usage: sudo -h | -K | -k | -V
-usage: sudo -v [-ABkNnS] [-g group] [-h host] [-p prompt] [-u user]
-usage: sudo -l [-ABkNnS] [-g group] [-h host] [-p prompt] [-U user]
-            [-u user] [command [arg ...]]
-usage: sudo [-ABbEHkNnPS] [-r role] [-t type] [-C num] [-D directory]
-            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
-            [-u user] [VAR=value] [-i | -s] [command [arg ...]]
-usage: sudo -e [-ABkNnS] [-r role] [-t type] [-C num] [-D directory]
-            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
-            [-u user] file ...
+1.enp0s3 [Up, Running, Connected]
+2.any (Pseudo-device that captures on all interfaces) [Up, Running]
+3.lo [Up, Running, Loopback]
+4.bluetooth-monitor (Bluetooth Linux Monitor) [Wireless]
+5.usbmon2 (Raw USB traffic, bus number 2)
+6.usbmon1 (Raw USB traffic, bus number 1)
+7.usbmon0 (Raw USB traffic, all USB buses) [none]
+8.nflog (Linux netfilter log (NFLOG) interface) [none]
+9.nfqueue (Linux netfilter queue (NFQUEUE) interface) [none]
