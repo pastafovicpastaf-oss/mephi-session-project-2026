@@ -1,0 +1,211 @@
+    1  systemctl get-defoult
+    2  systemctl get-default
+    3  id
+    4  ip link
+    5  ping 8.8.8.8
+    6  ip all
+    7  ip -all
+    8  ip address
+    9  nmcli connection show --active
+   10  ipconfig
+   11  ifconfig
+   12  nmcli connection show enp0s3
+   13  sudo nmcli connection modifly enp0s3 ipv4.method auto
+   14  sudo nmcli connection modify enp0s3 ipv4.method auto
+   15  sudo nmcli connection modifly enp0s3 ipv4.addresses ""
+   16  sudo nmcli connection modify enp0s3 ipv4.addresses ""
+   17  ip[ -a
+   18  ip -a
+   19  ip -address
+   20  ip address
+   21  nmcli -g connection.autoconnect connection show enp0s3
+   22  sudo hostnamectl set-hostname mephi-2026.domain.local
+   23  hostname
+   24  hostnamectl
+   25  ping 8.8.8.8
+   26  sudo dnf repolist
+   27  sudo dnf check-update
+   28  ssudo dnf upgrade
+   29  sudo dnf upgrade
+   30  ping -c 4 8.8.8.8 > ping.out
+   31  cat ping.out
+   32  sudo dnf install ngnix
+   33  sudo dnf install nginx
+   34  command -v nginx
+   35  sudo dnf install libcap-ng-utils
+   36  command -v getcap
+   37  command -v setcap
+   38  sudo dnf install dnf-plugins-core
+   39  dnf download --destdir /tmp tcpdump
+   40  sudo rpm -ivh /tmp/tcpdump-*.rpm
+   41  rm /tmp/tcpdump-4.99.5.red80.i686.rpm
+   42  rm /tmp/tcpdump-4.99.5-1.red80.i686.rpm
+   43  sudo rpm -ivh /tmp/tcpdump-*.rpm
+   44  command -v tcpdump
+   45  dnf history .~/dns.out
+   46  dnf history ~/dns.out
+   47  dnf history > ~/dns.out
+   48  cat ~/dnf.out
+   49  cat ~/vadim/dnf.out
+   50  dnf history > ~/dns.out
+   51  cat ~/dns.out
+   52  sudo systemctl poweroff
+   53  lsblk -no NAME,PATH,SIZE,TYPE,FSTYPE,LABEL,MOUNTPOINTS
+   54  sudo systemctl poweroff
+   55  lsblk -no NAME,PATH,SIZE,TYPE,FSTYPE,LABEL,MOUNTPOINTS
+   56  sudo fdisk /dev/sdb
+   57  lsblk -no NAME,PATH,SIZE,TYPE,FSTYPE,LABEL,MOUNTPOINTS
+   58  sudo mkfs.ext4 -L mephi_web /dev/sdb1
+   59  sudo mkdir -p /mephi-web
+   60  sudo mount /mephi-web
+   61  echo 'LABEL=mephi_web /mephi-web ext4 defaults 0 2' | sudo tee -a /etc/fstab
+   62  tail -n 3 /etc/fstab
+   63  sudo systemctl daemon-reload
+   64  sudo findmnt --verify
+   65  sudo mount /mephi-web
+   66  findmnt /mephi-web
+   67  df -h /mephi-web
+   68  sudo nginx -t
+   69  sudo systemctl start nginx.service
+   70  sudo systemctl enable nginx.service
+   71  systemctl is-enabled nginx.service
+   72  systemctl status nginx.service -no-pager
+   73  systemctl status nginx.service --no-pager
+   74  curl http://localhost/
+   75  sudo ss -lntp | grep ':80'
+   76  journalctl -u nginx.service -b > journalctl.out
+   77  cat journalctl.out
+   78  sudo dnf install acl
+   79  sudo groupadd devsite
+   80  sydo groupadd -g 4444 adsite
+   81  sudo groupadd -g 4444 adsite
+   82  getent group devsite
+   83  getent group adsite
+   84  getent grooup curators
+   85  sudo groupmod -n curators adsite
+   86  getent grooup curators
+   87  getent group curators
+   88  sudo useradd -m -u 5501 devsite user1
+   89  getent group devsite
+   90  sudo useradd -m -u 5501 -g devsite user1
+   91  sudo useradd -m -u 5502 -g devsite user2
+   92  sudo useradd -m -u 5503 -g devsite user3
+   93  id user1
+   94  id user2
+   95  id user3
+   96  sudo useradd -m -g curators curator1
+   97  sudo useradd -m -g curators curator2
+   98  id curator1
+   99  id curator2
+  100  sudo mkdir -p /data/mephi-2026
+  101  sudo chown root:devsite /data/mephi-2026
+  102  sudo chmod 2770 /data/mephi-2026
+  103  ls -id /data/mephi-2026
+  104  ls -ld /data/mephi-2026
+  105        command -v setfacl
+  106  sudo setfacl -m g:curators:r-x /data/mephi-2026
+  107  sudosetfacl -m m::rwx /data/mephi-2026
+  108  sudo setfacl -m m::rwx /data/mephi-2026
+  109  sudo setfacl -m o::--- /data/mephi-2026
+  110  sudo setfacl -d -m u::rwx /data/mephi-2026
+  111  sudo setfacl -d -m g:curators:r-x /data/mephi=2026
+  112  sudo setfacl -d -m g:curators:r-x /data/mephi-2026
+  113  sudo setfacl -d -m m::rwx /data/mephi-2026
+  114  getfacl/data/mephi-2026
+  115  getfacl /data/mephi-2026
+  116  sudo chmod u-s /usr/bin/tcpdump
+  117  sudo chmod u-s /usr/sbin/tcpdump
+  118  sudo setcap cap_net_raw,cap_net_admin=ep/usr/sbin/tcpdump
+  119  sudo setcap cap_net_raw,cap_net_admin=ep /usr/sbin/tcpdump
+  120  getcap /usr/sbin/tcpdump -D
+  121  getcap -u /usr/sbin/tcpdump -D
+  122  getcap /usr/sbin/tcpdump
+  123  sudo-u user /usr/sbin/tcpdump -D
+  124  sudo -u user /usr/sbin/tcpdump -D
+  125  sudo -u user1 /usr/sbin/tcpdump -D
+  126  getcap /usr/sbin/tcpdump > ~/getcap.out
+  127  getenforce
+  128  getcap /usr/sbin/tcpdump
+  129  ls
+  130  cat getcap.out
+  131  sudo -u user1 /usr/sbin/tcpdump -D > ~/tcpdump-user1.out
+  132  getenforce > ~/getenforce.out
+  133  grep '^SELINUX=' /etc/selinux/config
+  134  sudo semange fcontext -m -t httpd_sys_content_t '/mephi-web(/.*)?'
+  135  sudo semanage fcontext -m -t httpd_sys_content_t '/mephi-web(/.*)?'
+  136  dnf provides '*/semanage'
+  137  sudo dnf install policycoreutils-pythoon-utils
+  138  sudo dnf install policycoreutils-python-utils
+  139  command -v semanage
+  140  sudo sssemanage fcontext -a -t https_sys_content_t '/mephi-web(./*)'
+  141  sudo semanage fcontext -a -t https_sys_content_t '/mephi-web(./*)'
+  142  sudo semanage fcontext -a -t https_sys_content_t '/mephi-web(./*)?'
+  143  sudo semanage fcontext -a -t httpd_sys_content_t '/mephi-web(./*)?'
+  144  sudo semanage fcontext -i |grep '/mephi-web'
+  145  sudo semanage fcontext -i | grep '/mephi-web'
+  146  ls-la
+  147  ls -la
+  148  sudo semanage fcontext -a -t httpd_sys_content_t '/mephi-web(/.*)?'
+  149  sudo semanage fcontext -i | grep '/mephi-web'
+  150  sudo semanage fcontext -a -t httpd_sys_content_t '/mephi-web(/.*)?'
+  151  sudo semanage fcontext -m -t httpd_sys_content_t '/mephi-web(/.*)?'
+  152  sudo semanage fcontext -l | grep '/mephi-web'
+  153  sudo restorecon -RFv /mephi-web
+  154  ls -ldZ /mephi-web
+  155  echo 'Hello from Student: 375042' | sudo tee /mephi-web/index.html
+  156  sudo chown root:root /mephi-web/index.html
+  157  sudo chmod 644 /mephi-web/index.html
+  158  sudo restorecon -v /mephi-web/index.html
+  159  ls -lZ/mephi-web/index.html
+  160  ls -lZ /mephi-web/index.html
+  161  sudo grep -Rns 'root /usr/share/nginx/html' /etc/nginx
+  162  sudo sed -i 's#root /usr/share/nginx/html;#root /mephi-web;# /etcnginx/nginx.conf'
+  163  sudo sed -i 's#root /usr/share/nginx/html;#root /mephi-web;# /etc/nginx/nginx.conf'
+  164  sudo grep -Rns 'root[[:space:]]' /etc/nginx
+  165  sudo sed -i 's|/usr/share/nginx/html|g' /etc/nginx/nginx.conf
+  166  sudo sed -i 's|/usr/share/nginx/html|/mephi-web|g' /etc/nginx/nginx.conf
+  167  sudo grep -n 'root[[:space:]]' /etc/nginx/nginx.conf
+  168  Ssudo nginx -t
+  169  sudo nginx -t
+  170  ls
+  171  sudo cat /mephi-web/index.html
+  172  sudo restorecon -v /mephi-web/index.html
+  173  sudo nginx -t
+  174  sudo systemctl restart nginx
+  175  curl http://localhost/
+  176  systemctl is-enabled nginx
+  177  systemctl is-active nginx
+  178  gatenforce
+  179  getenforce
+  180  getcap /usr/sbin/tcpdump
+  181  findmnt /mephi-web
+  182  ls
+  183  stat /data/mephi-2026 > ~/stat.out
+  184  stat /mephi-web >> `/stat.out
+  185  cat `/stat.out
+  186  stat /mephi-web >> `/stat.out
+  187  ls
+  188  rm stat.out
+  189  ls
+  190  stat /mephi-web >> `/stat.out
+  191  ls  -la
+  192  ls
+  193  stat /mephi-web
+  194  stat /data/mephi-2026 > ~/stat.out
+  195  stat /mephi-2026 >> ~/stat.out
+  196  stat /mephi-web >> ~/stat.out
+  197  cat ~/stat.out
+  198  cap /usr/sbin/tcpdump > ~/getcap.out
+  199  getcap /usr/sbin/tcpdump > ~/getcap.out
+  200  sudo -u /usr/sbin/tcpdump -D > ~/tcpdump-user1.out 2>&1
+  201  dnf history > ~/dnf.out
+  202  journalctl -u nginx -b > journalctl.out
+  203  getenforce > ~/getenforce.out
+  204  curl https://local.host/ > ~/curl.out
+  205  curl https://localhost/ > ~/curl.out
+  206  curl http://localhost/ > ~/curl.out
+  207  getfacl /data/mephi-2026 > ~/getfacl.out
+  208  history > ~/history.out
+  209  getfacl /data/mephi-2026 > ~/getfacl.out
+  210* 
+  211  history > ~/history.out
